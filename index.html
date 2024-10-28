@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logical Operators</title>
+  </head>
+  <body>
+    <p>Output :</p>
+    <marquee behavior="" direction=""><p id="dem"></p></marquee>
+    <script>
+
+      var input =+ prompt("Enter a value like('user', 'admin' & 'client')");
+      var op =[]
+      if (input = 'admin' || input == 'user' || input == 'client' ) {
+        op.push("Authorized")
+        console.log("Authorized");
+      } else {
+        op.push("Un-Authorized Access.")
+        console.log("Un-Authorized Access.");
+      }
+
+      if (input = "admin" || (input == "user" && input == "client")) {
+        op.push("All is not.")
+        console.log("All is not.");
+      } else {
+        op.push("Not is all .")
+        console.log("Not is all .");
+      }
+
+      document.getElementById("dem").innerHTML = op;
+
+    </script>
+  </body>
+</html>
